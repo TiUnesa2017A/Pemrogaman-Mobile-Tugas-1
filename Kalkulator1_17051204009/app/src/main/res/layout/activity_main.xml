@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/AngkaMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/TampilAngka"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/numberButton"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tbClear"
+                style="@style/ActionButtonStyle"
+                android:text="CE" />
+
+            <TextView
+                android:id="@+id/tbOpen"
+                style="@style/ActionButtonStyle"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/tbClose"
+                style="@style/ActionButtonStyle"
+                android:text=")" />
+
+            <TextView
+                android:id="@+id/tbBagi"
+                style="@style/ActionButtonStyle"
+                android:text="/" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tbTujuh"
+                style="@style/NumberButtonStyle"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/tbDelapan"
+                style="@style/NumberButtonStyle"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/tbSembilan"
+                style="@style/NumberButtonStyle"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/tbKali"
+                style="@style/ActionButtonStyle"
+                android:text="x" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tbEmpat"
+                style="@style/NumberButtonStyle"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/tbLima"
+                style="@style/NumberButtonStyle"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/tbEnam"
+                style="@style/NumberButtonStyle"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/tbKurang"
+                style="@style/ActionButtonStyle"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tbSatu"
+                style="@style/NumberButtonStyle"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tbDua"
+                style="@style/NumberButtonStyle"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/tbTiga"
+                style="@style/NumberButtonStyle"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/tbTambah"
+                style="@style/ActionButtonStyle"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tbKoma"
+                style="@style/NumberButtonStyle"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/tbNol"
+                style="@style/NumberButtonStyle"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/tbBack"
+                style="@style/NumberButtonStyle"
+                android:scaleType="center"
+                android:src="@drawable/backspace" />
+
+            <TextView
+                android:id="@+id/tbSamadengan"
+                style="@style/ActionButtonStyle"
+                android:text="=" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
